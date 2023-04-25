@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+
+    <title>Login Page</title>
+    <style>
+      body {
+        background-color: #ECEFF5;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 32px;
+        max-width: 400px;
+        width: 100%;
+      }
+      .card h1 {
+        font-size: 24px;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        width: 100%;
+      }
+      .form-group label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .form-group input[type="email"],
+      .form-group input[type="password"] {
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 8px;
+      }
+      .form-group input[type="email"]:focus,
+      .form-group input[type="password"]:focus {
+        border-color: #1877f2;
+        outline: none;
+      }
+      .form-group button[type="submit"] {
+        background-color: #1877f2;
+        border: none;
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px;
+      }
+      .form-group button[type="submit"]:hover {
+        background-color: #1559a1;
+      }
+      .separator {
+        align-items: center;
+        display: flex;
+        margin: 16px 0;
+        width: 100%;
+      }
+      .separator::before,
+      .separator::after {
+        background-color: #cccccc;
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        margin: 0 16px;
+      }
+      .or {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        width: 100%;
+      }
+      .buttons button {
+        background-color: #6177A8;
+        border: none;
+        border-radius: 4px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        padding: 8px;
+      }
+      .forgotBtn
+      {
+        background-image: linear-gradient(#72A94A, #508935);
+      }
+      .buttons button:last-child {
+        background-color: #6177A8;
+      }
+      h1{
+        font-family: 'Noto Sans TC', sans-serif;
+        background: -moz-linear-gradient(top, #6E85B6, #4F69A0);
+        background: -ms-linear-gradient(top, #6E85B6, #4F69A0);
+        background: -webkit-linear-gradient(top, #6E85B6, #4F69A0);
+        color: white;
+      }
+      .buttons button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>facebook</h1>
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Log in</button>
+        </form>
+        <div class="separator">
+          <div class="or">or</div>
+        </div>
+        <div class="buttons">
+          <button class="loginBtn">Log in</button>
+          <button class="forgotBtn">Forgot password?</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
